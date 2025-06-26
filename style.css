@@ -1,0 +1,26 @@
+html{
+ background-color:#016f32;
+}
+#titre{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: goldenrod;
+}
+.jcp{
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.bu{
+    margin: auto;
+    width: 250px;
+    height: 90px;
+    background-color: goldenrod;
+    display: block;
+    color: #016f32;
+    font-size: 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
