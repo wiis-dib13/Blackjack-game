@@ -1,3 +1,8 @@
+let player ={
+    name: "wiss",
+    money: 145
+}
+
 let firstCard = getRand()
 let secondCard = getRand()
 let cards=[firstCard ,secondCard]
@@ -9,9 +14,18 @@ messageEl = document.getElementById('ti')
 sumEl = document.getElementById('sum')
 cardEl = document.getElementById('ca')
 
+
+let playerEl = document.getElementById("player")
+playerEl.textContent = player.name + ": " + player.money + "$"
+
+
 function getRand(){
-    let number = Math.floor(Math.random()*13)
-    return number
+let number = Math.floor(Math.random()*13) + 1
+        if(number === 1){
+        return 11
+    }else if(number>10){
+        return 10
+    }else return number
 }
 
 function start(){
@@ -27,17 +41,22 @@ if(sum <= 20){
 } else if(sum === 21){
     message = "you've got blackjack !"
     hasBlackJack = true
+    
 
 }else if(sum > 21){
     message = "you're out of the game"
     isAlive = false
+  
 }
 messageEl.textContent = message
 }
 
 function newca(){
- let card = getRand()
- cards.push(card)
- sum += card
- start() 
+if(isAlive==true && hasBlackJack == false && player.money != 0){
+  let card = getRand()
+  cards.push(card)
+  sum += card
+  start() 
+    }
 }
+
