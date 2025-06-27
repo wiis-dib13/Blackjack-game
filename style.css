@@ -1,26 +1,51 @@
-html{
- background-color:#016f32;
+html { 
+  background-color: #016f32;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-#titre{
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    color: goldenrod;
+
+body {
+  margin: 0;
+  padding: 0;
 }
-.jcp{
-    text-align: center;
-    font-size: 2rem;
-    color: aliceblue;
+
+#titre {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: goldenrod;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
-.bu{
-    margin: auto;
-    width: 250px;
-    height: 90px;
-    background-color: goldenrod;
-    display: block;
-    color: #016f32;
-    font-size: 2rem;
-    border-radius: 20px;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+
+.jcp {
+  text-align: center;
+  font-size: 1.5rem;
+  color: aliceblue;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.bu {
+  margin: 0.3rem auto;
+  width: 200px; 
+  height: 60px;  
+  background-color: goldenrod;
+  display: block;
+  color: #016f32;
+  font-size: 1.2rem; 
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.carte {
+  height: 8rem; 
+  width: 8rem;
+  background-color: aliceblue;
+  margin: 1rem auto;
+  background-image: url("carte.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 }
